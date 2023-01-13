@@ -1,0 +1,52 @@
+@use "./blocks/variables" as*;
+
+.subcatalog {
+  display: none;
+}
+
+.subcatalog__item {
+  &--new {
+    position: relative;
+    margin-bottom: 8px;
+  }
+
+  &--new::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 16px;
+    width: 103px;
+    height: 1px;
+    background-color: $gray;
+  }
+}
+
+.subcatalog__link {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 16px;
+  text-decoration: none;
+  color: $black;
+
+  &--new {
+    font-weight: 700;
+  }
+
+  &:hover {
+    background-color: $subcatalog-hover;
+  }
+
+  &:active {
+    background-color: $promo-background;
+  }
+
+  :focus {
+    outline: 2px solid $focus-color;
+  }
+
+  &--chosen {
+    background-color: $chosen-button-color;
+    color: $white;
+  }
+}

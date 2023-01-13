@@ -6,19 +6,23 @@ $inter: "inter", arial, sans-serif;
 
 $black: #2d3440;
 
+$light-black: #565c66;
+
 $white: #fcfcfc;
 
 $gray: #b9b9b9;
 
 // background-color
 
-$strawberry-background: #feafc3;
+$pink-background: #feafc3;
 
-$banana-background: #69a9ff;
+$blue-background: #69a9ff;
 
-$marshmallow-background: #fcc850;
+$yellow-background: #fcc850;
 
 $promo-background: #ff7799;
+
+$subcatalog-hover: #ffcbd8;
 
 // buttons-navigation
 
@@ -28,10 +32,12 @@ $white-hover-color: rgba(252, 252, 252, 0.5);
 
 $chosen-button-color: #ff4a78;
 
+$focus-color: #000000;
+
 //viewports
 
-$tablet-width: 768px;
+$desktop-width: 1170px;
 
-$desktop-width: 1440px;
+$tablet-width: 768px;
 
 $mobile-width-only: 320px;

@@ -1,0 +1,16 @@
+@use "./blocks/variables";
+@use "./blocks/fonts";
+@use "./blocks/global";
+@use "./blocks/page";
+
+// header
+
+@use "./blocks/header/main-header";
+@use "./blocks/header/logo";
+@use "./blocks/header/main-nav";
+@use "./blocks/header/subcatalog";
+@use "./blocks/header/popover";
+
+// footer
+// index
+// catalog

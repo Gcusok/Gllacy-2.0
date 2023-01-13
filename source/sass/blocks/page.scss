@@ -1,0 +1,31 @@
+@use "./fonts" as*;
+@use "./variables" as*;
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 320px;
+  margin: 0;
+  font-family: $inter;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $light-black;
+}
+
+.page__body--theme-pink {
+  background-color: $pink-background;
+}
+
+.page__body--theme-blue {
+  background-color: $blue-background;
+}
+
+.page__body--theme-yellow {
+  background-color: $yellow-background;
+}
