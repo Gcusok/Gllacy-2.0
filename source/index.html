@@ -13,14 +13,13 @@
 </head>
 
 <body class="page__body page__body--theme-pink">
-  <header class="main-header">
+  <header class="page-header">
     <h1 class="visually-hidden">GllacyShop</h1>
     <div class="container">
       <div class="main-header__wrapper">
         <a class="main-header__logo logo" href="#">
           <img class="logo__icon" src="img/icone/logo.svg" alt="Логотип компании 'Gllacy Shop'." width="137"
             height="56">
-          <span class="visually-hidden">Логотип GllacyShop</span>
         </a>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -53,22 +52,21 @@
           </ul>
           <ul class="main-nav__user-nav user-nav">
             <li class="user-nav__item">
-              <a class="user-nav__phone" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a class="user-nav__link user-nav__link--phone" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
             <li class="user-nav__item">
               <a class="user-nav__link user-nav__link--search" href="#">
                 <h2 class="visually-hidden">Поиск</h2>
-                <svg class="user-nav__icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z" />
+                <svg class="user-nav__icon user-nav__icon--search" aria-hidden="true" focusable="false" width="16"
+                  height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#search"></use>
                 </svg>
               </a>
-              <div class="user-nav__popover popover popover-search">
-                <form class="popover-search__search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="user-nav__popover popover">
+                <form class="popover__search-form" action="https://echo.htmlacademy.ru/" method="get">
                   <label class="visually-hidden">Поиск</label>
-                  <input class="popover-search__input field" type="text" placeholder="Поиск по сайту">
-                  <button class="close-button" type="reset">
+                  <input class="popover__search-input field" type="text" placeholder="Поиск по сайту">
+                  <button class="popover__search-reset-button button" type="reset">
                     <span class="visually-hidden">Сбросить</span>
                   </button>
                 </form>
@@ -76,75 +74,93 @@
             </li>
             <li class="user-nav__item user-nav__item--lk">
               <a class="user-nav__link user-nav__link--entry" href="#">Вход
-                <svg class="user-nav__icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" />
+                <svg class="user-nav__icon user-nav__icon--entry" aria-hidden="true" focusable="false" width="16"
+                  height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#log-in"></use>
                 </svg>
               </a>
-              <div class="user-nav__popover popover popover-entry">
-                <h2 class="popover-entry__title">Личный кабинет</h2>
-                <form class="popover-entry__form" action="https://echo.htmlacademy.ru/" method="post">
-                  <p class="popover-entry__field-group field-group">
+              <div class="user-nav__popover popover">
+                <h2 class="popover__entry-title">Личный кабинет</h2>
+                <form class="popover__entry-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <p class="popover__entry-field-group field-group">
                     <label class="visually-hidden" for="auth-login">Логин</label>
-                    <input class="popover-entry__field field" type="text" id="auth-login" name="auth-login"
+                    <input class="popover__entry-field field" type="text" id="auth-login" name="auth-login"
                       value="email@example.com" required>
                   </p>
-                  <p class="popover-entry__field-group field-group">
+                  <p class="popover__entry-field-group popover__entry-field-group--last-item field-group">
                     <label class="visually-hidden" for="auth-password">Пароль</label>
-                    <input class="popover-entry__field field" type="password" id="auth-password" name="auth-password"
+                    <input class="popover__entry-field field" type="password" id="auth-password" name="auth-password"
                       value="1234567" required>
                   </p>
-                  <button class="popover-entry__button button" type="submit">Войти</button>
-                  <div class="popover-entry__links-wrapper">
-                    <a class="popover-entry__link" href="#">Забыли пароль?</a>
-                    <a class="popover-entry__link" href="#">Регистрация</a>
+                  <div class="popover__entry-footer-wrapper">
+                    <button class="popover__entry-button regular-button button" type="submit">Войти</button>
+                    <div class="popover__entry-links-wrapper">
+                      <a class="popover__entry-link" href="#">Забыли пароль?</a>
+                      <a class="popover__entry-link" href="#">Регистрация</a>
+                    </div>
                   </div>
                 </form>
               </div>
             </li>
             <li class="user-nav__item user-nav__item--basket">
               <a class="user-nav__link user-nav__link--basket" href="#">
-                <svg class="user-nav__icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="user-nav__icon user-nav__icon--basket" aria-hidden="true" focusable="false" width="16"
+                  height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
                 2 товара
               </a>
-              <div class="user-nav__popover popover popover-basket">
-                <h2 class="popover-basket__title">Корзина</h2>
-                <form class="popover-basket__form" action="https://echo.htmlacademy.ru/" method="post">
-                  <ol class="popover-basket__list">
-                    <li class="popover-basket__item">
-                      <div class="popover-basket__image-wrapper">
-                        <img width="46" height="46" src="images/product-card/raspbery.png" alt="Малина.">
+              <div class="user-nav__popover popover">
+                <h2 class="popover__basket-title">Корзина</h2>
+                <span class="visually-hidden">
+                  Ваша корзина пока пуста
+                </span>
+                <form class="popover__basket-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <ol class="popover__basket-list">
+                    <li class="popover__basket-item">
+                      <div class="popover__basket-image-wrapper">
+                        <picture>
+                          <source media="(min-width:1365px)"
+                            srcset="img/content-image/product-card/desktop/strawberry-desktop.webp 1x, img/content-image/product-card/desktop/strawberry-desktop@2x.webp 2x">
+                          <img class="popover__basket-item-img"
+                            src="img/content-image/product-card/desktop/strawberry-desktop.png"
+                            srcset="img/product-card/desktop/strawberry-desktop@2x.png 2x" alt="Малина.">
+                        </picture>
                       </div>
-                      <div class="popover-basket__discription">
-                        <h3 class="popover-basket__title">Малинка</h3>
-                        <p class="popover-basket__price-per-kg">1 кг х 310 ₽</p>
+                      <div class="popover__basket-discription">
+                        <h3 class="popover__basket-item-title">Малинка</h3>
+                        <p class="popover__basket-price-per-kg">1 кг х 310 ₽</p>
                       </div>
-                      <b class="popover-basket__price">310 ₽</b>
-                      <button class="popover-basket__button-close" type="button">
+                      <b class="popover__basket-price">310 ₽</b>
+                      <button class="popover__basket-button-close button" type="button">
                         <span class="visually-hidden">Убрать позицию</span>
                       </button>
                     </li>
-                    <li class="popover-basket__item">
-                      <div class="popover-basket__image-wrapper">
-                        <img width="46" height="46" src="images/product-card/bubblegum.png" alt="Бабл-гам.">
+                    <li class="popover__basket-item">
+                      <div class="popover__basket-image-wrapper">
+                        <picture>
+                          <source media="(min-width:1365px)"
+                            srcset="img/content-image/product-card/desktop/bubblegum-desktop.webp 1x, img/content-image/product-card/desktop/bubblegum-desktop@2x.webp 2x">
+                          <img class="popover__basket-item-img" width="46" height="46"
+                            src="img/content-image/product-card/desktop/bubblegum-desktop.png"
+                            srcset="img/content-image/product-card/desktop/bubblegum-desktop@2x.png 2x" alt="Бабл-гам.">
+                        </picture>
                       </div>
-                      <div class="popover-basket__discription">
-                        <h3 class="popover-basket__title">Бабл-гам</h3>
-                        <p class="popover-basket__price-per-kg">1,5 кг х 320 ₽</p>
+                      <div class="popover__basket-discription">
+                        <h3 class="popover__basket-item-title">Бабл-гам</h3>
+                        <p class="popover__basket-price-per-kg">1,5 кг х 320 ₽</p>
                       </div>
-                      <b class="popover-basket__price">480 ₽</b>
-                      <button class="popover-basket__button-close" type="button">
+                      <b class="popover__basket-price">480 ₽</b>
+                      <button class="popover__basket-button-close button" type="button">
                         <span class="visually-hidden">Убрать позицию</span>
                       </button>
                     </li>
                   </ol>
-                  <button class="popover-basket__button button" type="submit">Оформить заказ</button>
-                  <p class="popover-basket-total">Итого: 790 ₽</p>
+                  <div class="popover__basket-footer-wrapper">
+                    <button class="popover__basket-buy-button regular-button button" type="submit">Оформить
+                      заказ</button>
+                    <p class="popover__basket-total">Итого: 790 ₽</p>
+                  </div>
                 </form>
               </div>
             </li>
@@ -617,6 +633,28 @@
       </button>
     </div>
   </div>
+
+
+  <!-- template basket item -->
+  <template id="popover-basket">
+    <li class="popover__basket-item">
+      <div class="popover__basket-image-wrapper">
+        <picture>
+          <source>
+          <img>
+        </picture>
+      </div>
+      <div class="popover__basket-discription">
+        <h3 class="popover__basket-title"></h3>
+        <p class="popover__basket-price-per-kg"></p>
+      </div>
+      <b class="popover__basket-price"></b>
+      <button class="popover__basket-button-close" type="button">
+        <span class="visually-hidden">Убрать позицию</span>
+      </button>
+    </li>
+  </template>
+
 </body>
 
 </html>

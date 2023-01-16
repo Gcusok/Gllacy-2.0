@@ -1,0 +1,88 @@
+@use "./blocks/variables" as*;
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-nav__item {
+  position: relative;
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.user-nav__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+
+  &--phone {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &--search {
+    position: relative;
+    padding: 6px;
+    border-radius: 27px;
+  }
+
+  &--entry,
+  &--basket {
+    position: relative;
+    padding: 6px 16px 6px 38px;
+    border-radius: 30px;
+  }
+
+  &--search,
+  &--entry,
+  &--basket {
+    background-color: $white-regular-color;
+  }
+
+  &--search:hover,
+  &--entry:hover,
+  &--basket:hover {
+    background-color: $white-hover-color;
+  }
+
+  &--search:active,
+  &--entry:active,
+  &--basket:active {
+    background-color: $white;
+  }
+
+  &:focus {
+    outline: 2px solid $focus-color;
+  }
+
+  &--chosen {
+    background-color: $chosen-button-color;
+  }
+
+  &--chosen .user-nav__icon {
+    color: $white;
+  }
+}
+
+.user-nav__icon {
+  &--search {
+    position: relative;
+    top: 3px;
+  }
+
+  &--entry,
+  &--basket {
+    position: absolute;
+    left: 16px;
+    top: 7px;
+  }
+}

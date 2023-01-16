@@ -12,6 +12,7 @@ $white: #fcfcfc;
 
 $gray: #b9b9b9;
 
+
 // background-color
 
 $pink-background: #feafc3;
@@ -34,9 +35,27 @@ $chosen-button-color: #ff4a78;
 
 $focus-color: #000000;
 
+// regular-button
+
+$outline-color: rgba(255, 47, 100, 0.3);
+
+$hover-outline-color: #ff2f64;
+
+$disabled-outline-color:  rgba(185, 185, 185, 0.3);
+
+$disabled-text-color: #565c66;
+
+// field
+
+$invalid-color: #ea5454;
+
+$disabled-color: #e7e7e7;
+
+$white-background-color: #ffffff;
+
 //viewports
 
-$desktop-width: 1170px;
+$desktop-width: 1365px;
 
 $tablet-width: 768px;
 

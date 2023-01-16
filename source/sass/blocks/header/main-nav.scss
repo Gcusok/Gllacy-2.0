@@ -1,5 +1,11 @@
 @use "./blocks/variables" as*;
 
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .main-nav__list {
   display: flex;
   max-width: 450px;
@@ -20,7 +26,7 @@
     position: absolute;
     left: 0;
     bottom: -9px;
-    z-index: 1;
+    z-index: 2;
     background-color: transparent;
   }
 
@@ -36,7 +42,7 @@
     box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
     border-radius: 4px;
     list-style: none;
-    z-index: 1;
+    z-index: 2;
   }
 }
 
