@@ -47,18 +47,18 @@ return gulp.src('source/js/*.js')
 const optimizeImages = () => {
 return gulp.src('source/img/**/*.{png,jpg}')
 .pipe(squoosh())
-.pipe(gulp.dest('build/img'))
+.pipe(gulp.dest('build/img/content-image'))
 }
 
 const copyImages = () => {
-return gulp.src('source/img/content-image/**/*.{png,jpg}')
+return gulp.src('source/img/**/*.{png,jpg}')
 .pipe(gulp.dest('build/img/content-image'))
 }
 
 // WebP
 
 const createWebp = () => {
-return gulp.src('source/img/content-image/**/*.{png,jpg}')
+return gulp.src('source/img/**/*.{png,jpg}')
 .pipe(squoosh({
 webp: {}
 }))
@@ -68,12 +68,12 @@ webp: {}
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/*.svg', 'source/img/icone/**/*.svg'])
+gulp.src(['source/img/**/*.svg', 'source/img/icons/**/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img/icone'));
 
 const sprite = () => {
-return gulp.src('source/img/icone/*.svg')
+return gulp.src('source/img/**/*.svg')
 .pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true

@@ -1,0 +1,10 @@
+@use "./blocks/variables" as*;
+
+.main-header__wrapper {
+  display: flex;
+  padding: 24px 0;
+}
+
+.main-header__logo {
+  margin-right: 16px;
+}

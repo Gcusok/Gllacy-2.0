@@ -1,0 +1,122 @@
+@use "./blocks/variables" as*;
+
+img {
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  min-width: $desktop-width;
+  max-width: $desktop-width;
+  padding: 0 98px;
+  margin: 0 auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.regular-button {
+  padding: 12px 32px;
+  outline: 4px solid $outline-color;
+  border-radius: 26px;
+  background-color: $hover-outline-color;
+  color: $white;
+
+  &:hover {
+    outline: 4px solid $hover-outline-color;
+    background-color: $white-regular-color;
+    color: $black;
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+    background-color: $pink-background;
+  }
+
+  &:active {
+    outline: 2px solid $black;
+    background-color: $hover-outline-color;
+    color: $white;
+  }
+
+  &:disabled {
+    outline: 4px solid $disabled-outline-color;
+    background-color: $gray;
+    color: $disabled-text-color;
+  }
+}
+
+.field-group {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  border: 1px solid $gray;
+  padding: 14px 16px;
+  width: 100%;
+  height: 48px;
+  background-color: $white-background-color;
+  color: $black;
+
+  &:hover {
+    border: 1px solid $black;
+  }
+
+  &:focus {
+    border-color: $black;
+    outline: 1px solid $black;
+  }
+
+  &:focus:invalid {
+    border: 1px solid $invalid-color;
+    outline: transparent;
+  }
+
+  &:invalid:hover {
+    border-color: $invalid-color;
+    box-shadow: 0 0 0 1px $invalid-color;
+  }
+
+  &:disabled {
+    background-color: $disabled-color;
+    border: 1px solid $gray;
+    opacity: 0.6;
+  }
+}

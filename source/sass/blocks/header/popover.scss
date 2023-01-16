@@ -1,0 +1,233 @@
+@use "./blocks/variables" as*;
+
+.popover {
+  display: none;
+  position: absolute;
+  background-color: $white;
+  border-radius: 4px;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+
+  &--search-open {
+    display: block;
+    width: 356px;
+    padding: 24px 16px;
+    top: 35px;
+    right: 0;
+  }
+
+  &--entry-open {
+    display: block;
+    min-width: 420px;
+    padding: 48px 48px 52px 48px;
+    top: 35px;
+    right: 0;
+  }
+
+  &--basket-open {
+    display: block;
+    min-width: 441px;
+    padding: 48px;
+    top: 35px;
+    right: 0;
+  }
+
+  &--basket-empty-open {
+    display: block;
+    min-width: 288px;
+    padding: 48px 0;
+  }
+}
+
+// header user-nav search-form
+
+.popover__search-form {
+  position: relative;
+}
+
+.popover__search-input {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 14px 16px;
+
+  &::placeholder {
+    color: $gray;
+  }
+}
+
+.popover__search-reset-button {
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  width: 16px;
+  height: 16px;
+  z-index: 3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 1px;
+    background-color: $gray;
+    top: 7px;
+    right: 4px;
+    rotate: -45deg;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 1px;
+    background-color: $gray;
+    top: 7px;
+    right: 4px;
+    rotate: 45deg;
+  }
+}
+
+// header user-nav login-form
+
+.popover__entry-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 32px;
+  color: $black;
+}
+
+.popover__entry-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popover__entry-field-group {
+  margin-bottom: 16px;
+
+  &--last-item {
+    margin-bottom: 32px;
+  }
+}
+
+.popover__entry-footer-wrapper {
+  display: flex;
+}
+
+.popover__entry-links-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.popover__entry-button {
+  margin-right: 19px;
+}
+
+.popover__entry-link {
+
+  text-decoration: none;
+  border-bottom: 1px solid $black;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+// header user-nav basked-form
+
+.popover__basket-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 32px;
+  color: $black;
+
+  &--empty {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.popover__basket-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popover__basket-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 31px;
+  border-bottom: 1px solid $disabled-color;
+  margin-bottom: 28px;
+}
+
+.popover__basket-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.popover__basket-image-wrapper {
+  margin-right: 16px;
+}
+
+.popover__basket-item-img {
+  width: 46px;
+  height: 46px;
+}
+
+.popover__basket-discription {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.popover__basket-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.popover__basket-price-per-kg {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $gray;
+}
+
+.popover__basket-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  align-self: center;
+  margin-right: 68px;
+}
+
+.popover__basket-button-close {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icone/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popover__basket-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popover__basket-total {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}

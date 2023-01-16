@@ -1,0 +1,75 @@
+@use "./blocks/variables" as*;
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-nav__list {
+  display: flex;
+  max-width: 450px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.main-nav__item {
+  position: relative;
+
+  &--subcatalog::after {
+    content: "";
+    width: 95px;
+    height: 9px;
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    z-index: 2;
+    background-color: transparent;
+  }
+
+  &--subcatalog:hover .subcatalog,
+  &--subcatalog:focus-within .subcatalog {
+    display: block;
+    min-width: 140px;
+    height: 188px;
+    position: absolute;
+    padding: 8px 0;
+    top: 42px;
+    background-color: $white;
+    box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+    border-radius: 4px;
+    list-style: none;
+    z-index: 2;
+  }
+}
+
+.main-nav__link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: $black;
+  line-height: 20px;
+
+  &:hover {
+    background-color: $white-hover-color;
+  }
+
+  &:active {
+    background-color: $white;
+  }
+
+  &:focus {
+    outline: 2px solid $focus-color;
+    background-color: $white-hover-color;
+  }
+
+  &--chosen {
+    background-color: $chosen-button-color;
+    color: $white;
+  }
+}
