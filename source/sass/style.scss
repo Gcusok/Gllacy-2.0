@@ -19,6 +19,8 @@
 
 // index
 
+@use "./blocks/index/gallery";
+@use "./blocks/index/slider";
 @use "./blocks/index/modal";
 
 // catalog
@@ -26,6 +28,7 @@
 //ui
 
 @use "./blocks/ui/button/button";
+@use "./blocks/ui/link-button/linlk-button";
 @use "./blocks/ui/regular-button/regular-button";
 @use "./blocks/ui/field/field";
 @use "./blocks/ui/social-list/social-list";

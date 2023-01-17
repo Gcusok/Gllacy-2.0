@@ -1,0 +1,36 @@
+@use "./blocks/variables" as*;
+
+.link-button {
+  padding: 12px 32px;
+  background-color: $white;
+  outline: 4px solid $white-outline-color;
+  box-shadow: 0 4px 12px $box-shadow-color;
+  border-radius: 26px;
+  color: $black;
+
+  &:hover {
+    background-color: $hover-background-color;
+    box-shadow: 0 4px 15px $hover-box-shadow;
+    outline: 4px solid $white;
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+    outline-offset: -2px;
+    background-color: $white;
+    box-shadow: 0 4px 15px $hover-box-shadow;
+  }
+
+  &:active {
+    outline: 2px solid $black;
+    outline-offset: -2px;
+    box-shadow: 0 4px 15px $hover-box-shadow;
+    background-color: $white-hover-color;
+  }
+
+  &--disabled {
+    outline: 4px solid $white-outline-color;
+    background-color: $disabled-color;
+    color: $gray;
+  }
+}
