@@ -34,18 +34,6 @@ img {
   box-sizing: border-box;
 }
 
-.button {
-  display: block;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-decoration: none;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .regular-button {
   padding: 12px 32px;
   outline: 4px solid $outline-color;
