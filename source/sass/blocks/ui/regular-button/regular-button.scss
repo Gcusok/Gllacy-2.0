@@ -1,0 +1,32 @@
+@use "./blocks/variables" as*;
+
+.regular-button {
+  padding: 12px 32px;
+  outline: 4px solid $outline-color;
+  border-radius: 26px;
+  background-color: $hover-outline-color;
+  color: $white;
+
+  &:hover {
+    outline: 4px solid $hover-outline-color;
+    background-color: $white-regular-color;
+    color: $black;
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+    background-color: $pink-background;
+  }
+
+  &:active {
+    outline: 2px solid $black;
+    background-color: $hover-outline-color;
+    color: $white;
+  }
+
+  &:disabled {
+    outline: 4px solid $disabled-outline-color;
+    background-color: $gray;
+    color: $disabled-text-color;
+  }
+}
