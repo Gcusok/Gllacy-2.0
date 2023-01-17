@@ -13,7 +13,14 @@
 @use "./blocks/header/popover";
 
 // footer
+
+@use "./blocks/footer/footer";
+@use "./blocks/footer/copyright";
+
 // index
+
+@use "./blocks/index/modal";
+
 // catalog
 
 //ui
@@ -21,4 +28,5 @@
 @use "./blocks/ui/button/button";
 @use "./blocks/ui/regular-button/regular-button";
 @use "./blocks/ui/field/field";
+@use "./blocks/ui/social-list/social-list";
 

@@ -1,0 +1,14 @@
+@use "./blocks/variables" as*;
+
+.copyright__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $black;
+  margin: 0;
+}
+
+.copyright__link {
+  text-decoration: none;
+  border-bottom: 1px solid $black;
+  color: inherit;
+}

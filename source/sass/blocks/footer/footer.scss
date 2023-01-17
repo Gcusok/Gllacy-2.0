@@ -1,0 +1,40 @@
+@use "./blocks/variables" as*;
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.footer__links {
+  max-width: 356px;
+}
+
+.footer__link-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px 24px;
+  margin: 0;
+  padding: 0;
+  padding-left: 24px;
+  list-style: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+}
+
+.footer__link-item {
+  position: relative;
+}
+
+.footer__icon {
+  position: absolute;
+  left: -24px;
+  top: 2px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
