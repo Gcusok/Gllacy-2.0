@@ -1,0 +1,85 @@
+@use "./blocks/variables" as*;
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  padding-top: 21px;
+  margin-bottom: 80px;
+}
+
+.gallery__wrapper {
+  display: flex;
+}
+
+.gallery__wrapper-left-side {
+  padding: 136px 0 114px 70px;
+  margin-right: 21px;
+}
+
+.gallery__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: $black;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 470px;
+}
+
+.gallery__title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.gallery__text {
+  max-width: 414px;
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.gallery__button {
+  align-self: flex-start;
+}
+
+.gallery__pagination-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__slider-paginator {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__paginator-button {
+  border: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: $white-regular-color;
+
+  &:hover {
+    outline: 1px solid $white;
+  }
+
+  &:active {
+    background-color: $white-hover-color;
+    outline: none;
+  }
+
+  &:focus {
+    outline: 1px solid $black;
+  }
+
+  &--active {
+    background-color: $white;
+  }
+}

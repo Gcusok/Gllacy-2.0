@@ -170,131 +170,119 @@
     </div>
   </header>
 
-  <main class="main-index main-container">
-    <div class="page-container">
-      <div class="gallery-column">
-        <div class="gallery-index">
-          <section class="gallery-content">
-            <h2 class="visually-hidden">Виды мороженного</h2>
-            <section class="gallery-discription gallery-discription-active">
-              <h2 class="gallery-title">Нежный пломбир <br> с клубничным джемом</h2>
-              <p class="gllery-text">Натуральное мороженое из свежих сливок
-                <br> и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
-              </p>
-              <a href="#" class="button button-order">Заказать</a>
-            </section>
-            <section class="gallery-discription">
-              <h2 class="gallery-title">Сливочное мороженое со вкусом банана</h2>
-              <p class="gllery-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
-                наслаждение даже в самый жаркий летний день.</p>
-              <a href="#" class="button button-order">Заказать</a>
-            </section>
-            <section class="gallery-discription">
-              <h2 class="gallery-title">Карамельный пломбир с маршмеллоу</h2>
-              <p class="gllery-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
-                сердца
-                сладкоежек всех
-                возрастов.</p>
-              <a href="#" class="button button-order">Заказать</a>
-            </section>
-          </section>
-          <section class="gallery">
-            <h2 class="visually-hidden">Галерея</h2>
-            <div class="slider">
-              <div class="slider-item-focused">
-                <div class="slider-image-wrapper">
-                  <img class="slider-image" src="images/gallery/strawberry.png"
-                    alt="Нежный пломбир с клубничным джемом." width="306" height="507">
+  <main class="main-index">
+    <div class="container">
+      <section class="gallery">
+        <h2 class="visually-hidden">Виды мороженного</h2>
+        <div class="gallery__wrapper">
+          <div class="gallery__wrapper-left-side">
+            <div class="gallery__description">
+              <h2 class="gallery__title">Нежный пломбир с клубничным джемом</h2>
+              <p class="gallery__text">Натуральное мороженое из свежих сливок
+                и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+              <a href="#" class="button link-button">Заказать</a>
+            </div>
+          </div>
+          <div class="gallery__wrapper-right-side">
+            <div class="gallery__slider slider">
+              <div class="slider__item slider__item--chosen">
+                <div class="slider__image-wrapper slider__image-wrapper--chosen">
+                  <picture>
+                    <source media="(min-width:1365px)"
+                      srcset="img/content-image/gallery/desktop/strawberry-desktop.webp 1x, img/content-image/gallery/desktop/strawberry-desktop@2x.webp 2x">
+                    <img class="slider__image slider__image--chosen"
+                      src="img/content-image/gallery/desktop/strawberry-desktop.png"
+                      srcset="img/content-image/gallery/desktop/strawberry-desktop@2x.png 2x" alt="Мароженное с клубничным джемом.">
+                  </picture>
                 </div>
-                <div class="slider-controls">
-                  <button class="slider-button slider-prev" type="button">
+                <div class="slider__controls">
+                  <button class="slider-button slider-button--prev" type="button">
                     <span class="visually-hidden">Предыдущее фото</span>
-                    <svg class="slider-button-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
-                      fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z" />
+                    <svg class="slider__controls-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                      viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/icone/sprite.svg#arrow-left"></use>
                     </svg>
                   </button>
-                  <button class="slider-button slider-next" type="button">
-                    <span class="visually-hidden">Следующее фото</span>
-                    <svg class="slider-button-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
-                      fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z" />
+                  <button class="slider-button slider-button--next" type="button">
+                    <span class="visually-hidden">Слудующее фото</span>
+                    <svg class="slider__controls-icon slider__controls-icon--next" aria-hidden="true" focusable="false" width="16" height="16"
+                      viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/icone/sprite.svg#arrow-left"></use>
                     </svg>
                   </button>
                 </div>
               </div>
-              <div class="slider-item slider-item-two">
-                <div class="slider-image-wrapper">
-                  <img class="slider-image banana" src="images/gallery/banana.png"
-                    alt="Сливочное мороженое со вкусом банана." width="306" height="507">
-                </div>
+              <div class="slider__item slider-item--two">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/gallery/desktop/banana-desktop.webp 1x, img/content-image/gallery/desktop/banana-desktop@2x.webp 2x">
+                  <img class="slider__image"
+                    src="img/content-image/gallery/desktop/banana-desktop.png"
+                    srcset="img/content-image/gallery/desktop/banana-desktop@2x.png 2x" alt="Мороженое со вкусом банана.">
+                </picture>
               </div>
-              <div class="slider-item  slider-item-three">
-                <div class="slider-image-wrapper">
-                  <img class="slider-image caramel" src="images/gallery/caramel.png"
-                    alt="Карамельный пломбир с маршмеллоу." width="306" height="507">
-                </div>
+              <div class="slider__item slider-iten-tree">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/gallery/desktop/caramel-desktop.webp 1x, img/content-image/gallery/desktop/caramel-desktop@2x.webp 2x">
+                  <img class="slider__image"
+                    src="img/content-image/gallery/desktop/caramel-desktop.png"
+                    srcset="img/content-image/gallery/desktop/caramel-desktop@2x.png 2x" alt="Пломбир
+                    с маршмеллоу.">
+                </picture>
               </div>
             </div>
-          </section>
-          <div class="pagination-social">
-            <ol class="slider-paginator">
-              <li class="slider-paginator-item">
-                <button class="slider-paginator-button paginator-button-active" type="button">
-                  <span class="visually-hidden">1 фото</span>
-                </button>
-              </li>
-              <li class="slider-paginator-item">
-                <button class="slider-paginator-button" type="button">
-                  <span class="visually-hidden">2 фото</span>
-                </button>
-              </li>
-              <li class="slider-paginator-item">
-                <button class="slider-paginator-button" type="button">
-                  <span class="visually-hidden">3 фото</span>
-                </button>
-              </li>
-            </ol>
-            <section class="social">
-              <h2 class="visually-hidden">Социальные сети</h2>
-              <ul class="social-list">
-                <li class="social-item">
-                  <a class="social-link" href="https://t.me/htmlacademy">
-                    <span class="visually-hidden">Телеграмм</span>
-                    <svg class="telegramm-button" aria-hidden="true" focusable="false" width="16" height="16"
-                      viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.29 5.9c-.78.33-2.34 1-4.67 2.02-.38.15-.58.3-.6.44-.02.24.28.34.7.47l.17.05c.4.14.96.3 1.24.3.26 0 .55-.1.87-.32a82.12 82.12 0 0 1 3.38-2.23c.05-.01.12-.03.16.01.05.04.04.12.04.14a22.62 22.62 0 0 1-2.2 2.16l-.2.18c-.37.37-.66.64.02 1.1.33.2.6.38.85.56a59.64 59.64 0 0 0 1.2.82c.34.23.64.45 1 .41.22-.02.44-.22.55-.82.27-1.41.79-4.48.9-5.75.02-.1.01-.21 0-.31a.34.34 0 0 0-.12-.22.52.52 0 0 0-.3-.1c-.31.01-.77.17-3 1.1Z" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a class="social-link" href="https://vk.com/htmlacademy">
-                    <span class="visually-hidden">Вконтакте</span>
-                    <svg class="vk-button" width="16" height="16" aria-hidden="true" focusable="false"
-                      viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.4 9.98h-.5s-1.05.06-1.98-.79c-1.01-.92-1.9-2.76-1.9-2.76s-.06-.12 0-.18.23-.07.23-.07H5.4s.11.01.19.06c.06.04.1.12.1.12s.18.4.43.78c.47.72.7.88.86.8.24-.11.16-1.02.16-1.02s0-.33-.11-.48c-.1-.11-.28-.14-.36-.15-.06-.01.04-.14.18-.2.2-.09.57-.1 1-.09.33 0 .43.02.56.05.3.06.3.27.27.71a9.7 9.7 0 0 0-.01.6c-.01.22-.02.48.15.58.09.05.3 0 .84-.8.25-.37.44-.81.44-.81s.04-.08.11-.12c.07-.03.15-.02.15-.02h1.2s.37-.04.43.1c.06.15-.14.5-.63 1.07-.46.54-.69.75-.67.92.01.13.16.25.44.48a3.4 3.4 0 0 1 .8.8c.26.4-.3.42-.3.42l-1.06.02s-.23.04-.54-.15c-.15-.1-.3-.25-.45-.4-.23-.22-.44-.43-.62-.38-.3.08-.28.65-.28.65s0 .12-.07.18c-.07.07-.22.08-.22.08Z" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-                    <span class="visually-hidden">Youtube</span>
-                    <svg class="youtube-button" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.34 7.86 7.46 7c-.16-.08-.3 0-.3.19v1.64c0 .18.14.27.3.2l1.88-.88c.16-.08.16-.2 0-.28ZM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm0 11.25c-4.1 0-4.17-.37-4.17-3.25S3.9 4.75 8 4.75s4.17.37 4.17 3.25-.07 3.25-4.17 3.25Z" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </section>
           </div>
         </div>
-      </div>
+        <div class="gallery__pagination-social">
+          <ol class="gallery__slider-paginator">
+            <li class="gallery__paginator-item">
+              <button class="gallery__paginator-button gallery__paginator-button--active" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="gallery__paginator-item">
+              <button class="gallery__paginator-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="gallery__paginator-item">
+              <button class="gallery__paginator-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграмм</span>
+                <svg class="social__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="social__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span>
+                <svg class="social__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <section class="banners">
         <h2 class="banners-title">Заказывайте мороженое и&nbsp;получайте подарки!</h2>
@@ -658,6 +646,26 @@
         <span class="visually-hidden">Убрать позицию</span>
       </button>
     </li>
+  </template>
+
+<!-- gallery description -->
+
+  <div class="gallery__description">
+    <h2 class="gallery__title"></h2>
+    <p class="gallery__text"></p>
+    <a href="#" class="button link-button"></a>
+  </div>
+
+
+<!-- template gallery image-item -->
+
+  <template>
+    <div class="slider-item">
+      <picture>
+        <source>
+        <img>
+      </picture>
+    </div>
   </template>
 
 </body>
