@@ -420,32 +420,33 @@
           </li>
         </ul>
       </section>
+
       <section class="advantages">
-        <div class="advantages-wrapper">
-          <div class="advantages-box-wrapper">
+        <div class="advantages__wrapper">
+          <div class="advantages__content-wrapper">
             <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
               собственного
               производства на развес</h2>
-            <ul class="advantages-list">
-              <li class="advantages-item advantages-ice-cream">
-                <p class="advantages-item-discription">Всё наше мороженое изготавливается на собственном производстве
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <p class="advantages__discription">Всё наше мороженое изготавливается на собственном производстве
                   с
                   использованием современного оборудования и проверенных временем технологий.</p>
               </li>
-              <li class="advantages-item">
-                <p class="advantages-item-discription advantages-cow">Закупка ингредиентов производится только
+              <li class="advantages__item">
+                <p class="advantages__discription">Закупка ингредиентов производится только
                   у&nbsp;проверенных фермерских хозяйств, с которыми
                   <br> нас связывает долговременное сотрудничество.
                 </p>
               </li>
-              <li class="advantages-item advantages-leaf">
-                <p class="advantages-item-discription">Для приготовления мороженого используются сливки и молоко
+              <li class="advantages__item">
+                <p class="advantages__discription">Для приготовления мороженого используются сливки и молоко
                   высочайшего
                   качества. Все ингредиенты
                   и&nbsp;добавки произведены из натурального сырья.</p>
               </li>
-              <li class="advantages-item advantages-thermometer">
-                <p class="advantages-item-discription">Доставка нашего мороженого осуществляется в специальном
+              <li class="advantages__item">
+                <p class="advantages__discription">Доставка нашего мороженого осуществляется в специальном
                   термопаке,
                   который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
               </li>
@@ -672,16 +673,15 @@
   </template>
 
   <!-- gallery description -->
-
-  <div class="gallery__description">
-    <h2 class="gallery__title"></h2>
-    <p class="gallery__text"></p>
-    <a href="#" class="button link-button"></a>
-  </div>
-
+  <template>
+    <div class="gallery__description">
+      <h2 class="gallery__title"></h2>
+      <p class="gallery__text"></p>
+      <a href="#" class="button link-button"></a>
+    </div>
+  </template>
 
   <!-- template gallery image-item -->
-
   <template>
     <div class="slider-item">
       <picture>
@@ -692,7 +692,6 @@
   </template>
 
   <!-- template hero-item -->
-
   <template>
     <div class="hero__card hero-card">
       <div class="hero-card__content-wrapper">
