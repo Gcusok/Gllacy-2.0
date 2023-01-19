@@ -1,0 +1,39 @@
+@use "./blocks/variables" as*;
+
+.excerpt {
+  background-image: url("../img/background/background-excerpts-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $white;
+  min-width: 570px;
+  border-radius: 16px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/background-excerpts-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.excerpt__box {
+  display: block;
+  text-decoration: none;
+  padding: 32px;
+  padding-bottom: 67px;
+}
+
+.excerpt__subtitle {
+  color: $light-black;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.excerpt__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: $black;
+  margin: 0;
+  max-width: 303px;
+}
