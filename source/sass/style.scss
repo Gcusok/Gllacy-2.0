@@ -38,6 +38,12 @@
 
 @use "./blocks/index/advantages";
 
+//exceprt-newsletter
+
+@use "./blocks/index/exceprt-newsletter";
+@use "./blocks/index/excerpt";
+@use "./blocks/index/newsletter";
+
 // modal
 
 @use "./blocks/index/modal";

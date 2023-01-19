@@ -1,0 +1,33 @@
+@use "./blocks/variables" as*;
+
+.newsletter {
+  background-image: url("../img/background/background-border-newsletters-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 570px;
+  width: 100%;
+  padding: 6px;
+  border-radius: 16px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/background-border-newsletters-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.newsletter__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $white;
+  padding: 26px;
+  border-radius: 16px;
+}
+
+.newsletter__discription {
+  margin-bottom: 44px;
+}
+
+.newsletter__field {
+  max-width: 332px;
+}
