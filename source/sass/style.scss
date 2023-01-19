@@ -42,9 +42,14 @@
 
 //ui
 
+
+// buttons
+
 @use "./blocks/ui/button/button";
 @use "./blocks/ui/link-button/linlk-button";
 @use "./blocks/ui/regular-button/regular-button";
+@use "./blocks/ui/basket-button/basket-button";
+// ---
 @use "./blocks/ui/field/field";
 @use "./blocks/ui/product-card/product-card";
 @use "./blocks/ui/social-list/social-list";
