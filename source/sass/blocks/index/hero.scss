@@ -1,0 +1,23 @@
+@use "blocks/variables" as*;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  color: $black;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  max-width: 464px;
+  text-align: center;
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+}

@@ -19,8 +19,18 @@
 
 // index
 
+// gallery
+
 @use "./blocks/index/gallery";
 @use "./blocks/index/slider";
+
+// hero
+
+@use "./blocks/index/hero";
+@use "./blocks/index/hero-card";
+
+// modal
+
 @use "./blocks/index/modal";
 
 // catalog
