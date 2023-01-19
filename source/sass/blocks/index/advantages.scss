@@ -1,2 +1,58 @@
 @use "./blocks/variables" as*;
 
+.advantages {
+  margin-bottom: 80px;
+}
+
+.advantages__wrapper {
+  background: url("../img/background/background-border-advantages-desktop.jpg") no-repeat center;
+  background-size: cover;
+  padding: 24px;
+  border-radius: 15px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/background/background-border-advantages-desktop@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.advantages__content-wrapper {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 56px 40px;
+}
+
+.advantages-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 56px;
+  color: $black;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.advantages__discription {
+  max-width: 442px;
+  margin: 0;
+}
+
+.advantages__icon {
+  fill: none;
+  margin-right: 16px;
+}
