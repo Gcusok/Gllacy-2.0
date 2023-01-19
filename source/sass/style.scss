@@ -19,6 +19,7 @@
 
 // index
 
+
 // gallery
 
 @use "./blocks/index/gallery";
@@ -28,6 +29,10 @@
 
 @use "./blocks/index/hero";
 @use "./blocks/index/hero-card";
+
+// promo
+
+@use "./blocks/index/popular";
 
 // modal
 
@@ -41,5 +46,6 @@
 @use "./blocks/ui/link-button/linlk-button";
 @use "./blocks/ui/regular-button/regular-button";
 @use "./blocks/ui/field/field";
+@use "./blocks/ui/product-card/product-card";
 @use "./blocks/ui/social-list/social-list";
 

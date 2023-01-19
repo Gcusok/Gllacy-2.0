@@ -1,0 +1,27 @@
+@use "./blocks/variables" as*;
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  color: $black;
+}
+
+.popular__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  max-width: 580px;
+  text-align: center;
+}
+
+.popular__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
