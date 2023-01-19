@@ -192,7 +192,8 @@
                       srcset="img/content-image/gallery/desktop/strawberry-desktop.webp 1x, img/content-image/gallery/desktop/strawberry-desktop@2x.webp 2x">
                     <img class="slider__image slider__image--chosen"
                       src="img/content-image/gallery/desktop/strawberry-desktop.png"
-                      srcset="img/content-image/gallery/desktop/strawberry-desktop@2x.png 2x" alt="Мароженное с клубничным джемом.">
+                      srcset="img/content-image/gallery/desktop/strawberry-desktop@2x.png 2x"
+                      alt="Мароженное с клубничным джемом.">
                   </picture>
                 </div>
                 <div class="slider__controls">
@@ -205,8 +206,8 @@
                   </button>
                   <button class="slider-button slider-button--next" type="button">
                     <span class="visually-hidden">Слудующее фото</span>
-                    <svg class="slider__controls-icon slider__controls-icon--next" aria-hidden="true" focusable="false" width="16" height="16"
-                      viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="slider__controls-icon slider__controls-icon--next" aria-hidden="true" focusable="false"
+                      width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                       <use href="img/icone/sprite.svg#arrow-left"></use>
                     </svg>
                   </button>
@@ -216,17 +217,16 @@
                 <picture>
                   <source media="(min-width:1365px)"
                     srcset="img/content-image/gallery/desktop/banana-desktop.webp 1x, img/content-image/gallery/desktop/banana-desktop@2x.webp 2x">
-                  <img class="slider__image"
-                    src="img/content-image/gallery/desktop/banana-desktop.png"
-                    srcset="img/content-image/gallery/desktop/banana-desktop@2x.png 2x" alt="Мороженое со вкусом банана.">
+                  <img class="slider__image" src="img/content-image/gallery/desktop/banana-desktop.png"
+                    srcset="img/content-image/gallery/desktop/banana-desktop@2x.png 2x"
+                    alt="Мороженое со вкусом банана.">
                 </picture>
               </div>
               <div class="slider__item slider-iten-tree">
                 <picture>
                   <source media="(min-width:1365px)"
                     srcset="img/content-image/gallery/desktop/caramel-desktop.webp 1x, img/content-image/gallery/desktop/caramel-desktop@2x.webp 2x">
-                  <img class="slider__image"
-                    src="img/content-image/gallery/desktop/caramel-desktop.png"
+                  <img class="slider__image" src="img/content-image/gallery/desktop/caramel-desktop.png"
                     srcset="img/content-image/gallery/desktop/caramel-desktop@2x.png 2x" alt="Пломбир
                     с маршмеллоу.">
                 </picture>
@@ -284,25 +284,21 @@
         </div>
       </section>
 
-      <section class="banners">
-        <h2 class="banners-title">Заказывайте мороженое и&nbsp;получайте подарки!</h2>
-        <div class="banners-box">
-          <div class="banners-wrapper banners-left">
-            <div class="banners-card">
-              <h3 class="banners-heading">Малинка даром!</h3>
-              <p class="banners-card-discription">При покупке 2 кг любого фруктового мороженого добавим в ваш
-                заказ
-                банку малинового варенья бесплатно.</p>
-              <a href="#" class="button button-order">Хочу подарок</a>
-            </div>
+      <section class="hero">
+        <h2 class="hero__title">Заказывайте мороженое и&nbsp;получайте подарки!</h2>
+        <div class="hero__wrapper">
+          <div class="hero__card hero-card">
+            <h3 class="hero-card__heading">Малинка даром!</h3>
+            <p class="hero-card__discription">При покупке 2 кг любого фруктового мороженого добавим в ваш
+              заказ
+              банку малинового варенья бесплатно.</p>
+            <a class="button link-button" href="#">Хочу подарок</a>
           </div>
-          <div class="banners-wrapper banners-right">
-            <div class="banners-card">
-              <h3 class="banners-heading">Маршмеллоу даром!</h3>
-              <p class="banners-card-discription">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку
-                нежных <br> зефирок совершенно бесплатно.</p>
-              <a href="#" class="button button-order">Хочу подарок</a>
-            </div>
+          <div class="hero__card banners-card">
+            <h3 class="hero-card__heading">Маршмеллоу даром!</h3>
+            <p class="hero-card__discription">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку
+              нежных <br> зефирок совершенно бесплатно.</p>
+            <a class="button link-button" href="#">Хочу подарок</a>
           </div>
         </div>
       </section>
@@ -648,7 +644,7 @@
     </li>
   </template>
 
-<!-- gallery description -->
+  <!-- gallery description -->
 
   <div class="gallery__description">
     <h2 class="gallery__title"></h2>
@@ -657,7 +653,7 @@
   </div>
 
 
-<!-- template gallery image-item -->
+  <!-- template gallery image-item -->
 
   <template>
     <div class="slider-item">
