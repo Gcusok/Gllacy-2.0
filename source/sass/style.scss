@@ -44,6 +44,11 @@
 @use "./blocks/index/excerpt";
 @use "./blocks/index/newsletter";
 
+//delivery
+
+@use "./blocks/index/delivery";
+@use "./blocks/index/tooltip";
+
 // modal
 
 @use "./blocks/index/modal";
