@@ -1,0 +1,57 @@
+@use "./blocks/variables" as*;
+
+.contacts {
+  background-image: url("../img/background/background-contacts-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 64px;
+  border-radius: 16px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/background-contacts-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.contacts__wrapper {
+  background-color: $white;
+  width: 343px;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 12px;
+  max-width: 203px;
+}
+
+.contacts__addres {
+  font-style: normal;
+  margin-bottom: 24px;
+}
+
+.contacts__addres-text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $black;
+}
+
+.contacts__addres-phone {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $black;
+}
+
+.contacts__work-time {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 32px;
+}
