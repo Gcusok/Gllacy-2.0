@@ -5,7 +5,7 @@
 
 // header
 
-@use "./blocks/header/main-header";
+@use "./blocks/header/page-header";
 @use "./blocks/header/logo";
 @use "./blocks/header/main-nav";
 @use "./blocks/header/user-nav";
@@ -58,6 +58,8 @@
 @use "./blocks/index/modal";
 
 // catalog
+
+@use "./blocks/catalog/breadcrumbs";
 
 //ui
 

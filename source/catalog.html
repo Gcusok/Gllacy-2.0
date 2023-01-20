@@ -13,18 +13,18 @@
 </head>
 
 <body class="page__body page__body--theme-pink">
-  <header class="page-header">
+  <header class="page-header page-header--catalog">
     <h1 class="visually-hidden">GllacyShop</h1>
     <div class="container">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo logo" href="index.html">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo" href="index.html">
           <img class="logo__icon" src="img/icone/logo.svg" alt="Логотип компании 'Gllacy Shop'." width="137"
             height="56">
         </a>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--subcatalog">
-              <a class="main-nav__link" href="catalog.html">Каталог</a>
+              <a class="main-nav__link main-nav__link--chosen href="catalog.html">Каталог</a>
               <ul class="main-nav__subcatalog subcatalog">
                 <li class="subcatalog__item subcatalog__item--new">
                   <a class="subcatalog__link subcatalog__link--new" href="#">Новинки</a>
@@ -122,19 +122,20 @@
       </div>
     </div>
   </header>
-  <main class="main-inner main-container">
-    <div class="page-container">
-      <header class="header-catalog">
+
+  <main>
+    <div class="container">
+      <header class="breadcrumbs">
         <h2 class="visually-hidden">Каталог</h2>
-        <ol class="breadcrumbs">
-          <li class="breadcrumbs-item ">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item ">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
           </li>
-          <li class="breadcrumbs-item ">
-            <a class="breadcrumbs-link breadcrumbs-link-border">Каталог</a>
+          <li class="breadcrumbs__item ">
+            <a href="#" class="breadcrumbs__link breadcrumbs__link--chosen">Каталог</a>
           </li>
         </ol>
-        <h2 class="inner-header-title">Сливочное мороженое</h2>
+        <h2 class="breadcrumbs__title">Сливочное мороженое</h2>
       </header>
       <section class="catalog-products-filter">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
