@@ -496,60 +496,58 @@
 
       <section class="delivery">
         <h2 class="visually-hidden">Доставка</h2>
-        <div class="delivery-discription">
-          <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
-          <p class="delivery-text">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин?
+        <div class="delivery__discription">
+          <h2 class="delivery__title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery__text">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин?
             Закажите
             доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         </div>
-        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить
+        <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="delivery__form-text">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить
             заказ.
           </p>
-          <p class="field-group appointment-form-date">
-            <span class="form-label form-label-icon">
-              <label class="form-label" for="appointment-date">Дата</label>
+          <p class="delivery__field-group">
+            <span class="delivery__label delivery__label-icon">
+              <label class="delivery__label" for="appointment-date">Дата</label>
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  <svg class="tooltip-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M7 2.13a4.88 4.88 0 1 0 0 9.75 4.88 4.88 0 0 0 0-9.75ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 0 0 0 1.33.67.67 0 0 0 0-1.33Z"
-                      fill="#2D3440" />
+                <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/icone/sprite.svg#info"></use>
                   </svg>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите желаемую дату и время и мы
+                <span class="tooltip__text" role="tooltip" id="tooltip-label">Укажите желаемую дату и время и мы
                   свяжемся с вами для подтверждения</span>
               </span>
             </span>
-            <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020"
-              required>
+            <input class="delivery__field-date field" type="text" id="appointment-date"
+              name="appointment-date" placeholder="01.04.2020" required>
           </p>
-          <p class="field-group appointment-form-phone">
-            <label class="form-label" for="appointment-phone">Телефон</label>
-            <input class="field" type="text" id="appointment-phone" name="appointment-phone"
+          <p class="delivery__field-group">
+            <label class="delivery__label" for="appointment-phone">Телефон</label>
+            <input class="delivery__phone-field field" type="text" id="appointment-phone" name="appointment-phone"
               placeholder="+7 800 999-00-00" required>
           </p>
-          <p class="field-group appointment-form-adres">
-            <span class="form-label form-label-icon">
-              <label class="form-label" for="appointment-adres">Адрес</label>
+          <p class="delivery__field-group delivery__field-group--last-one">
+            <span class="delivery__label delivery__label-icon">
+              <label class="delivery__label" for="appointment-adres">Адрес</label>
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  <svg class="tooltip-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip__icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M7 2.13a4.88 4.88 0 1 0 0 9.75 4.88 4.88 0 0 0 0-9.75ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 0 0 0 1.33.67.67 0 0 0 0-1.33Z"
                       fill="#2D3440" />
                   </svg>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltips-adres">Укажите адрес и мы
+                <span class="tooltip__text" role="tooltip" id="tooltips-adres">Укажите адрес и мы
                   свяжемся с вами для подтверждения брони</span>
               </span>
             </span>
-            <input class="field" type="text" id="appointment-adres" name="appointment-addres"
+            <input class="delivery__field-adres field" type="text" id="appointment-adres" name="appointment-addres"
               placeholder="ул. Большая Конюшенная, 19/8" required>
           </p>
-          <button class="button submit-form-button" type="submit">Отправить</button>
+          <button class="delivery__button regular-button button" type="submit">Отправить</button>
         </form>
       </section>
       <section class="contacts">
