@@ -137,27 +137,28 @@
         </ol>
         <h2 class="breadcrumbs__title">Сливочное мороженое</h2>
       </header>
-      <section class="catalog-products-filter">
+
+      <section class="catalog-filter">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Сортировка:</legend>
-            <div class="select">
-              <select class="select-control" name="sort" id="sort-value">
+        <form class="catalog-filter__form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter__group">
+            <legend class="catalog-filter__title">Сортировка:</legend>
+            <div class="catalog-filter__select">
+              <select class="catalog-filter__select-control" name="sort" id="sort-value">
                 <option value="popular">по популярности</option>
               </select>
             </div>
           </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-            <div class="range-wrapper">
+          <fieldset class="catalog-filter__group">
+            <legend class="catalog-filter__title">Цена: 100 ₽ – 500 ₽</legend>
+            <div class="catalog-filter__range-wrapper">
               <div class="range">
-                <div class="range-sclae">
+                <div class="range__sclae">
                   <div class="range-bar">
-                    <button class="range-toggle toggle-min" type="button">
+                    <button class="range__toggle range__toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max" type="button">
+                    <button class="range__toggle range__toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -165,104 +166,98 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="catalog-filter-group catalog-filter-fat-percent">
-            <legend class="catalog-filter-title">Жирность:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input type="radio" value="0%" name="fat-percent" class="visually-hidden control-input">
-                  <span class="control-mark"></span>
+          <fieldset class="catalog-filter__group catalog-filter__group--fat-percent">
+            <legend class="catalog-filter__title">Жирность:</legend>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="visually-hidden catalog-filter__control-input" type="radio" value="0%" name="fat-percent">
+                  <span class="catalog-filter__control-mark"></span>
                   0%
                 </label>
               </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input type="radio" value="before 10%" name="fat-percent" class="visually-hidden control-input"
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="visually-hidden catalog-filter__control-input" type="radio" value="before 10%" name="fat-percent"
                     checked>
-                  <span class="control-mark"></span>
+                  <span class="catalog-filter__control-mark"></span>
                   до 10%
                 </label>
               </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input type="radio" value="before 30%" name="fat-percent" class="visually-hidden  control-input">
-                  <span class="control-mark"></span>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="visually-hidden  catalog-filter__control-input" type="radio" value="before 30%" name="fat-percent">
+                  <span class="catalog-filter__control-mark"></span>
                   до 30%
                 </label>
               </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input type="radio" value="over 30%" name="fat-percent" class="visually-hidden control-input">
-                  <span class="control-mark"></span>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="visually-hidden catalog-filter__control-input" type="radio" value="over 30%" name="fat-percent">
+                  <span class="catalog-filter__control-mark"></span>
                   выше 30%
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group catalog-filter-fill">
-            <legend class="catalog-filter-title">Наполнители:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input visually-hidden" name="fill" value="chocolate" type="checkbox" checked>
-                  <span class="control-mark">
-                    <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+          <fieldset class="catalog-filter__group catalog-filter__group--fill">
+            <legend class="catalog-filter__title">Наполнители:</legend>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="chocolate" type="checkbox" checked>
+                  <span class="catalog-filter__control-mark">
+                    <svg class="catalog-filter__checked-icon" width="16" height="16" viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
+                      <use href="img/icone/sprite.svg#chekced"></use>
                     </svg>
                   </span>
                   шоколадные
                 </label>
               </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input visually-hidden" name="fill" value="sugar" type="checkbox" checked>
-                  <span class="control-mark">
-                    <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="sugar" type="checkbox" checked>
+                  <span class="catalog-filter__control-mark">
+                    <svg class="catalog-filter__checked-icon" width="16" height="16" viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
+                      <use href="img/icone/sprite.svg#chekced"></use>
                     </svg>
                   </span>
                   сахарные посыпки
                 </label>
               </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input visually-hidden" name="fill" value="fruits" type="checkbox">
-                  <span class="control-mark">
-                    <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="fruits" type="checkbox">
+                  <span class="catalog-filter__control-mark">
+                    <svg class="catalog-filter__checked-icon" width="16" height="16" viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
+                      <use href="img/icone/sprite.svg#chekced"></use>
                     </svg>
                   </span>
                   фрукты
                 </label>
               </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input visually-hidden" name="fill" value="syrups" type="checkbox">
-                  <span class="control-mark">
-                    <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="syrups" type="checkbox">
+                  <span class="catalog-filter__control-mark">
+                    <svg class="catalog-filter__checked-icon" width="16" height="16" viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
+                      <use href="img/icone/sprite.svg#chekced"></use>
                     </svg>
                   </span>
                   сиропы
                 </label>
               </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input visually-hidden" name="fill" value="jams" type="checkbox">
-                  <span class="control-mark">
-                    <svg class="checked-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="jams" type="checkbox">
+                  <span class="catalog-filter__control-mark">
+                    <svg class="catalog-filter__checked-icon" width="16" height="16" viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"
-                        fill="#2D3440" />
+                      <use href="img/icone/sprite.svg#chekced"></use>
                     </svg>
                   </span>
                   джемы
@@ -270,7 +265,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button catalog-products-button" type="submit">Применить</button>
+          <button class="catalog-filter__button" type="submit">Применить</button>
         </form>
       </section>
       <section class="catalog-inner">
