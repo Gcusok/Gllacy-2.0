@@ -24,7 +24,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--subcatalog">
-              <a class="main-nav__link main-nav__link--chosen href="catalog.html">Каталог</a>
+              <a class="main-nav__link main-nav__link--chosen href=" catalog.html">Каталог</a>
               <ul class="main-nav__subcatalog subcatalog">
                 <li class="subcatalog__item subcatalog__item--new">
                   <a class="subcatalog__link subcatalog__link--new" href="#">Новинки</a>
@@ -171,29 +171,32 @@
             <ul class="catalog-filter__list">
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="visually-hidden catalog-filter__control-input" type="radio" value="0%" name="fat-percent">
+                  <input class="visually-hidden catalog-filter__control-input" type="radio" value="0%"
+                    name="fat-percent">
                   <span class="catalog-filter__control-mark"></span>
                   0%
                 </label>
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="visually-hidden catalog-filter__control-input" type="radio" value="before 10%" name="fat-percent"
-                    checked>
+                  <input class="visually-hidden catalog-filter__control-input" type="radio" value="before 10%"
+                    name="fat-percent" checked>
                   <span class="catalog-filter__control-mark"></span>
                   до 10%
                 </label>
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="visually-hidden  catalog-filter__control-input" type="radio" value="before 30%" name="fat-percent">
+                  <input class="visually-hidden  catalog-filter__control-input" type="radio" value="before 30%"
+                    name="fat-percent">
                   <span class="catalog-filter__control-mark"></span>
                   до 30%
                 </label>
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="visually-hidden catalog-filter__control-input" type="radio" value="over 30%" name="fat-percent">
+                  <input class="visually-hidden catalog-filter__control-input" type="radio" value="over 30%"
+                    name="fat-percent">
                   <span class="catalog-filter__control-mark"></span>
                   выше 30%
                 </label>
@@ -205,7 +208,8 @@
             <ul class="catalog-filter__list">
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="chocolate" type="checkbox" checked>
+                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="chocolate"
+                    type="checkbox" checked>
                   <span class="catalog-filter__control-mark">
                     <svg class="catalog-filter__checked-icon" width="16" height="16" viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg">
@@ -217,7 +221,8 @@
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="sugar" type="checkbox" checked>
+                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="sugar" type="checkbox"
+                    checked>
                   <span class="catalog-filter__control-mark">
                     <svg class="catalog-filter__checked-icon" width="16" height="16" viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +234,8 @@
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="fruits" type="checkbox">
+                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="fruits"
+                    type="checkbox">
                   <span class="catalog-filter__control-mark">
                     <svg class="catalog-filter__checked-icon" width="16" height="16" viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg">
@@ -241,7 +247,8 @@
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="syrups" type="checkbox">
+                  <input class="catalog-filter__control-input visually-hidden" name="fill" value="syrups"
+                    type="checkbox">
                   <span class="catalog-filter__control-mark">
                     <svg class="catalog-filter__checked-icon" width="16" height="16" viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg">
@@ -268,310 +275,338 @@
           <button class="catalog-filter__button" type="submit">Применить</button>
         </form>
       </section>
-      <section class="catalog-inner">
+
+      <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
-        <ul class="product-list">
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/raspbery.png" alt="Малиновое мороженое." class="popular-card-image"
-                  width="270" height="184">
+        <ul class="catalog__list">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Малинка</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Сливочное мороженое с малиновым джемом</p>
-              <b class="product-card-price">310 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/pistachio.png" alt="Фисташковое мороженое." class="popular-card-image"
-                  width="270" height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Фисташка</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Фисташковый пломбир с кусочками шоколада</p>
-              <b class="product-card-price">340 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/blueberry.png" alt="Черничное мороженое." class="popular-card-image"
-                  width="270" height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Черника</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Крем-брюле с&nbsp;черничным джемом</p>
-              <b class="product-card-price">330 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/bubblegum.png" alt="Ванильный пломбир Бабл-гам."
-                  class="popular-card-image" width="270" height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Бабл-гам</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Ванильный пломбир
-                со&nbsp;сладкой посыпкой</p>
-              <b class="product-card-price">320 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/blackberry.png" alt="Мороженное с ежевичным джемом."
-                  class="popular-card-image" width="270" height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Ежевика</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Сливочное мороженое с ежевичным джемом</p>
-              <b class="product-card-price">330 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/banana.png" alt="Сливочный пломбир с банановым вкусом."
-                  class="popular-card-image" width="270" height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Банан</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Сливочный пломбир
-                с&nbsp;банановым вкусом</p>
-              <b class="product-card-price">340 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/chocolate.png" alt="Шоколадный пломбир." class="popular-card-image"
-                  width="270" height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Шоколадка</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Классический шоколадный пломбир</p>
-              <b class="product-card-price">270 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/strawberry.png" alt="Сливочный пломбир с клубничным вкусом."
-                  class="popular-card-image" width="270" height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Клубничка</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Сливочный пломбир
-                с&nbsp;клубничным вкусом</p>
-              <b class="product-card-price">300 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/lemon.png" alt="Лимонный сорбет." class="popular-card-image" width="270"
-                  height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Лимон</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Освежающий лимонный сорбет</p>
-              <b class="product-card-price">310 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/menthol.png" alt="Сливочный пломбир с ментоловым сиропом."
-                  class="popular-card-image" width="270" height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Ментол</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Сливочный пломбир
-                с&nbsp;ментоловым сиропом</p>
-              <b class="product-card-price">320 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/nut.png" alt="Фисташковый пломбир с шоколадным сиропом."
-                  class="popular-card-image" width="270" height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Орешек</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Фисташковый пломбир с шоколадным сиропом</p>
-              <b class="product-card-price">360 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="product-card">
-            <a href="#" class="product-card-image-link">
-              <div class="product-image-wrapper">
-                <img src="images/product-card/creme-brulee.png" alt="Мароженное крем-брюле." class="popular-card-image"
-                  width="270" height="184">
+          <li class="catalog__item product-card">
+            <a class="product-card__image-link" href="#">
+              <div class="product-card__image-wrapper">
+                <picture>
+                  <source media="(min-width:1365px)"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                    srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+                </picture>
               </div>
-              <h3 class="product-card-title">Крем-брюле</h3>
+              <h3 class="product-card__title">Малинка</h3>
             </a>
-            <div class="product-card-wrapper">
-              <p class="product-card-discriprion">Классическое <br>крем-брюле </p>
-              <b class="product-card-price">280 ₽/кг</b>
-              <a href="#" class="product-card-button button">
+            <div class="product-card__wrapper">
+              <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+              <b class="product-card__price">310 ₽/кг</b>
+              <a href="#" class="button basket-button">
                 <span class="visually-hidden">Купить</span>
-                <svg class="product-card-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
               </a>
             </div>
           </li>
         </ul>
-        <div class="pagination">
-          <div class="pagination-space"></div>
-          <a href="#" class="button button-order">Показать еще</a>
-          <ul class="paginator">
-            <li class="paginator-item-prev">
-              <a class="paginator-prev paginator-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-                <svg class="paginator-prev-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
-                    fill="#2D3440" />
+        <div class="catalog__pagination">
+          <a href="#" class="catalog__pagination-button link-button button">Показать еще</a>
+
+          <ul class="catalog__pagination-list">
+            <li class="catalog__pagination-item catalog__pagination-item--nav-prev">
+              <a href="#" class="catalog__pagination-link catalog__pagination-link--prev catalog__pagination-link--disabled">
+                <svg class="scatalog__pagination-icon scatalog__pagination-icon--prew" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#arrow-left"></use>
                 </svg>
               </a>
             </li>
-            <li class="paginator-item">
-              <a href="#" class="paginator-link">1</a>
+            <li class="catalog__pagination-item">
+              <a href="#" class="catalog__pagination-link">1</a>
             </li>
-            <li class="paginator-item">
-              <a href="#" class="paginator-link">2</a>
+            <li class="catalog__pagination-item">
+              <a href="#" class="catalog__pagination-link">2</a>
             </li>
-            <li class="paginator-item">
-              <a class="paginator-link paginator-current">3</a>
+            <li class="catalog__pagination-item">
+              <a href="#" class="catalog__pagination-link">3</a>
             </li>
-            <li class="paginator-item">
-              <a href="#" class="paginator-link">4</a>
+            <li class="catalog__pagination-item">
+              <a href="#" class="catalog__pagination-link">4</a>
             </li>
-            <li class="paginator-item">
-              <a href="#" class="paginator-link">5</a>
+            <li class="catalog__pagination-item">
+              <a href="#" class="catalog__pagination-link">5</a>
             </li>
-            <li class="paginator-item-next">
-              <a href="#" class="paginator-next">
-                <span class="visually-hidden">Следующая страница</span>
-                <svg class="paginator-prev-next" aria-hidden="true" focusable="false" width="16" height="16"
-                  viewBox="0 0 16 16" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
-                    fill="#2D3440" />
+            <li class="catalog__pagination-item catalog__pagination-item--nav-next">
+              <a href="#" class="catalog__pagination-link catalog__pagination-link--next">
+                <svg class="scatalog__pagination-icon scatalog__pagination-icon--next" aria-hidden="true" focusable="false" width="16" height="16"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/icone/sprite.svg#arrow-left"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-      </section>
+    </div>
+    </section>
     </div>
   </main>
 
