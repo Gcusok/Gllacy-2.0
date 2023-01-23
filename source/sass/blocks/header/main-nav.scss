@@ -72,4 +72,8 @@
     background-color: $chosen-button-color;
     color: $white;
   }
+
+  &--chosen:hover {
+    background-color: $chosen-button-color;
+  }
 }

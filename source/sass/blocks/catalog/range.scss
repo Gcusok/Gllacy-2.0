@@ -1,0 +1,60 @@
+@use "./blocks/variables" as*;
+
+.range {
+  padding: 17px 16px;
+  background-color: $white-regular-color;
+  border-radius: 18px;
+}
+
+.range__sclae {
+  bottom: 1px;
+  width: 164px;
+  height: 2px;
+  background-color: $range-scale-background;
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: relative;
+  left: 31px;
+  width: 56px;
+  height: 2px;
+  background-color: $black;
+}
+
+.range__toggle {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  padding: 0;
+  background-color: $white;
+  border-radius: 50%;
+  border: solid 6px $black;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $white;
+    background-color: $black;
+  }
+
+  &:focus {
+    background-color: $black;
+    border-color: $white;
+    outline: 2px solid $black;
+  }
+
+  &:active {
+    border-color: $black;
+    outline: none;
+  }
+}
+
+.range__toggle-min {
+  top: -7px;
+  left: -8px;
+}
+
+.range__toggle-max {
+  right: -10px;
+  top: -7px;
+}
