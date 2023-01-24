@@ -16,16 +16,17 @@
   line-height: 22px;
   font-weight: 400;
   color: $light-black;
-}
+  transition: 1.3s;
 
-.page__body--theme-pink {
-  background-color: $pink-background;
-}
+  &--theme-pink {
+    background-color: $pink-background;
+  }
 
-.page__body--theme-blue {
-  background-color: $blue-background;
-}
+  &--theme-blue {
+    background-color: $blue-background;
+  }
 
-.page__body--theme-yellow {
-  background-color: $yellow-background;
+  &--theme-yellow {
+    background-color: $yellow-background;
+  }
 }
