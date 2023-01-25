@@ -7,6 +7,7 @@ const circleImage = chosenItem.querySelector('.slider__item-circle');
 const prevButton = slider.querySelector('.slider-button--prev');
 const nextButton = slider.querySelector('.slider-button--next');
 const paginationItems = document.querySelectorAll('.gallery__paginator-button');
+const slidesDescription = document.querySelectorAll('.gallery__description-item');
 
 const themeBody = [
   {
@@ -56,6 +57,7 @@ const swiperSlide = (operations) => {
   : sliderCount--;
   isValidSlide();
   renderSlider(sliderCount);
+  showDescription(sliderCount);
   pagination(sliderCount);
 }
 
@@ -80,6 +82,12 @@ paginationItems.forEach((dot, index) => {
     clianerSlide(sliderCount);
     sliderCount = index;
     pagination(sliderCount);
+    showDescription(index);
     renderSlider(index);
   })
 })
+
+const showDescription= (index) => {
+  slidesDescription.forEach(item => item.classList.remove('gallery__description-item--chosen'));
+  slidesDescription[index].classList.add('gallery__description-item--chosen');
+}
