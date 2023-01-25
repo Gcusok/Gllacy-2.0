@@ -64,29 +64,6 @@
     background-color: $subcatalog-hover;
     z-index: -1;
   }
-
-  // &--chosen::after {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 0;
-  //   transform: translateY(-50%);
-  //   content: "";
-  //   width: 312px;
-  //   height: 312px;
-  //   border-radius: 100%;
-  //   background-color: $subcatalog-hover;
-  //   z-index: -1;
-  // }
-
-  // &--chosen {
-  //   margin-right: 62px;
-  //   opacity: 1;
-  // }
-
-  // &--chosen .slider__image {
-  //   width: 306px;
-  //   height: 507px;
-  // }
 }
 
 .slider__image-wrapper {

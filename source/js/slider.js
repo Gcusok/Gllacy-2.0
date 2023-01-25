@@ -26,8 +26,7 @@ const themeBody = [
 const imagesArr = [...sliderItems];
 let sliderCount = 0;
 
-const swiperSlide = (operations) => {
-  const isValidSlide = () => {
+const isValidSlide = () => {
     if(sliderCount >= sliderItems.length) {
       return sliderCount = 0;
     };
@@ -35,16 +34,29 @@ const swiperSlide = (operations) => {
       return sliderCount = sliderItems.length - 1
     };
   }
+
+const clianerSlide = (sliderCount) => {
   body.classList.remove(themeBody[sliderCount].class);
   slider.appendChild(imagesArr[sliderCount]);
   sliderItemWrapper.innerHTML = "";
+}
+
+const renderSlider = (sliderCount) => {
+  body.classList.add(themeBody[sliderCount].class);
+  circleImage.style.backgroundColor = themeBody[sliderCount].circle;
+  chosenItem.appendChild(imagesArr[sliderCount]);
+}
+
+
+const swiperSlide = (operations) => {
+  isValidSlide();
+  clianerSlide(sliderCount);
   operations === 'plus' ?
   sliderCount++
   : sliderCount--;
   isValidSlide();
-  body.classList.add(themeBody[sliderCount].class);
-  circleImage.style.backgroundColor = themeBody[sliderCount].circle;
-  chosenItem.appendChild(imagesArr[sliderCount]);
+  renderSlider(sliderCount);
+  pagination(sliderCount);
 }
 
 const nextSlide = () => {
@@ -65,9 +77,9 @@ const pagination = (index) => {
 
 paginationItems.forEach((dot, index) => {
   dot.addEventListener('click', () => {
+    clianerSlide(sliderCount);
     sliderCount = index;
     pagination(sliderCount);
+    renderSlider(index);
   })
 })
-
-console.log(themeBody[sliderCount].circle);
