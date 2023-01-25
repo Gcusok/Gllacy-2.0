@@ -12,6 +12,11 @@
 }
 
 .gallery__wrapper-left-side {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   padding: 136px 0 114px 70px;
   margin-right: 21px;
 }
@@ -24,6 +29,15 @@
   font-size: 18px;
   line-height: 24px;
   max-width: 470px;
+  margin-bottom: 56px;
+}
+
+.gallery__description-item {
+  display: none;
+
+  &--chosen {
+    display: block;
+  }
 }
 
 .gallery__title {
@@ -38,7 +52,6 @@
 .gallery__text {
   max-width: 414px;
   margin: 0;
-  margin-bottom: 56px;
 }
 
 .gallery__button {
