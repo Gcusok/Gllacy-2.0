@@ -1,5 +1,111 @@
 @use "./blocks/variables" as*;
 
-.modal-container {
+.modal {
   display: none;
+
+  &--open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $modal-background-color;
+    z-index: 1;
+  }
+}
+
+.modal__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 570px;
+  margin: auto;
+  padding: 64px;
+  position: relative;
+  background-color: $white;
+  box-shadow: 0 15px 40px $box-shadow-color;
+  border-radius: 8px;
+}
+
+.modal__feedback-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 32px;
+  color: $black;
+}
+
+.modal__form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.modal__form-field-group {
+  margin: 0;
+  margin-bottom: 16px;
+  width: 100%;
+
+  &:nth-last-child(-n+2) {
+    margin-bottom: 32px;
+  }
+}
+
+.modal__form-text-area {
+  width: 100%;
+  min-height: 149px;
+  resize: none;
+  padding: 14px 16px;
+  font-family: $inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  border: 1px solid $gray;
+
+  &:hover {
+    border: 1px solid $black;
+  }
+
+  &:focus {
+    border-color: $black;
+    outline: 1px solid $black;
+  }
+
+  &:focus:invalid {
+    border: 1px solid $invalid-color;
+    outline: transparent;
+  }
+
+  &:invalid:focus:hover {
+    border-color: $invalid-color;
+    box-shadow: 0 0 0 1px $invalid-color;
+  }
+
+  &:disabled {
+    background-color: $disabled-color;
+    border: 1px solid $gray;
+    opacity: 0.6;
+  }
+
+  &:focus:valid {
+    border: 1px solid $valid-color;
+    outline: none;
+  }
+}
+
+.modal__form-button {
+  margin-left: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icone/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
