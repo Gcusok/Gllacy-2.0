@@ -1,6 +1,9 @@
 name: Deploy to GitHub-Pages
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   deploy:
@@ -12,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v3
 
@@ -28,19 +30,10 @@ jobs:
           key: cache-npm-${{ hashFiles('./package-lock.json') }}
           restore-keys: cache-npm-
 
-      - name: Install
-        run: npm i
+        run: npm сi
 
-      - name: Build project
         run: npm run build
-        uses: actions/download-artifact@v3
-        with:
-          name: build
-        uses: actions/checkout@v3
-        uses: actions/download-artifact@v3
 
-      - name: Display structure of downloaded files
-        run: ls -R
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
