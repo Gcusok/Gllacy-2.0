@@ -52,9 +52,9 @@
           </ul>
           <ul class="main-nav__user-nav user-nav">
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--phone" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a class="user-nav__link user-nav__link--phone" href="tel:78005558628">+7 800 555-86-28</a>
             </li>
-            <li class="user-nav__item">
+            <li class="user-nav__item user-nav__item--search">
               <a class="user-nav__link user-nav__link--search" href="#">
                 <h2 class="visually-hidden">Поиск</h2>
                 <svg class="user-nav__icon user-nav__icon--search" aria-hidden="true" focusable="false" width="16"
@@ -62,7 +62,7 @@
                   <use href="img/icone/sprite.svg#search"></use>
                 </svg>
               </a>
-              <div class="user-nav__popover popover">
+              <div class="user-nav__popover--search popover">
                 <form class="popover__search-form" action="https://echo.htmlacademy.ru/" method="get">
                   <label class="visually-hidden">Поиск</label>
                   <input class="popover__search-input field" type="text" placeholder="Поиск по сайту">
@@ -79,15 +79,15 @@
                   <use href="img/icone/sprite.svg#log-in"></use>
                 </svg>
               </a>
-              <div class="user-nav__popover popover">
+              <div class="user-nav__popover--lk popover">
                 <h2 class="popover__entry-title">Личный кабинет</h2>
-                <form class="popover__entry-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <p class="popover__entry-field-group field-group">
+                <form class="popover__entry-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                  <p class="popover__entry-field-group">
                     <label class="visually-hidden" for="auth-login">Логин</label>
                     <input class="popover__entry-field field" type="text" id="auth-login" name="auth-login"
                       value="email@example.com" required>
                   </p>
-                  <p class="popover__entry-field-group popover__entry-field-group--last-item field-group">
+                  <p class="popover__entry-field-group popover__entry-field-group--last-item">
                     <label class="visually-hidden" for="auth-password">Пароль</label>
                     <input class="popover__entry-field field" type="password" id="auth-password" name="auth-password"
                       value="1234567" required>
@@ -108,13 +108,10 @@
                   height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/icone/sprite.svg#cart"></use>
                 </svg>
-                2 товара
+                <span class="user-nav__link-basket-count">2 товара</span>
               </a>
-              <div class="user-nav__popover popover">
+              <div class="user-nav__popover--basket popover">
                 <h2 class="popover__basket-title">Корзина</h2>
-                <span class="visually-hidden">
-                  Ваша корзина пока пуста
-                </span>
                 <form class="popover__basket-form" action="https://echo.htmlacademy.ru/" method="post">
                   <ol class="popover__basket-list">
                     <li class="popover__basket-item">
@@ -131,7 +128,12 @@
                         <h3 class="popover__basket-item-title">Малинка</h3>
                         <p class="popover__basket-price-per-kg">1 кг х 310 ₽</p>
                       </div>
-                      <b class="popover__basket-price">310 ₽</b>
+                      <b class="popover__basket-price">
+                        <span class="popover__basket-price-value">310</span> ₽
+                      </b>
+                      <input type="hidden" name="ice-cream-flavor" value="Малинка">
+                      <input type="hidden" name="price" value="310">
+                      <input type="hidden" name="weight" value="1кг">
                       <button class="popover__basket-button-close button" type="button">
                         <span class="visually-hidden">Убрать позицию</span>
                       </button>
@@ -150,7 +152,12 @@
                         <h3 class="popover__basket-item-title">Бабл-гам</h3>
                         <p class="popover__basket-price-per-kg">1,5 кг х 320 ₽</p>
                       </div>
-                      <b class="popover__basket-price">480 ₽</b>
+                      <b class="popover__basket-price">
+                        <span class="popover__basket-price-value">480</span> ₽
+                      </b>
+                      <input class="input-ice-cream-flavor" type="hidden" name="ice-cream-flavor" value="Бабл-гам">
+                      <input class="input-price" type="hidden" name="price" value="480">
+                      <input class="input-weight" type="hidden" name="weight" value="1,5 кг">
                       <button class="popover__basket-button-close button" type="button">
                         <span class="visually-hidden">Убрать позицию</span>
                       </button>
@@ -159,7 +166,9 @@
                   <div class="popover__basket-footer-wrapper">
                     <button class="popover__basket-buy-button regular-button button" type="submit">Оформить
                       заказ</button>
-                    <p class="popover__basket-total">Итого: 790 ₽</p>
+                    <p class="popover__basket-total">Итого:
+                      <span class="popover__basket-total-value"></span> ₽
+                    </p>
                   </div>
                 </form>
               </div>
@@ -372,7 +381,7 @@
                 <picture>
                   <source media="(min-width:1365px)"
                     srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
-                  <img class="hero-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+                  <img class="product-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
                     srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
                 </picture>
               </div>
@@ -509,7 +518,7 @@
               Честно =)</label>
             <input class="field newsletter__field" id="newsletter-email" placeholder="email@example.com" type="email"
               name="newsletter-email" aria-required="true" required>
-            <button class="button regular-button" type="submit">Отправить</button>
+            <button class="newsletter__button button regular-button" type="submit">Отправить</button>
           </form>
         </section>
       </div>
@@ -541,12 +550,12 @@
               </span>
             </span>
             <input class="delivery__field-date field" type="text" id="appointment-date" name="appointment-date"
-              placeholder="01.04.2020" required>
+              placeholder="01.04.2020" pattern="(0?[1-9]|[12][0-9]|3[01]).(0?[1-9]|1[012]).((19|20)\d\d)" required>
           </p>
           <p class="delivery__field-group">
             <label class="delivery__label" for="appointment-phone">Телефон</label>
-            <input class="delivery__phone-field field" type="text" id="appointment-phone" name="appointment-phone"
-              placeholder="+7 800 999-00-00" required>
+            <input class="delivery__phone-field field" type="tel" id="appointment-phone" name="appointment-phone"
+              placeholder="+7 800 999-00-00" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
           </p>
           <p class="delivery__field-group delivery__field-group--last-one">
             <span class="delivery__label delivery__label-icon">
@@ -581,7 +590,7 @@
           <p class="contacts__text">Для заказов по телефону:</p>
           <a class="contacts__addres-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <p class="contacts__work-time">(с 10 до 20 ежедневно)</p>
-          <a class="button regular-button" href="#">Форма обратной связи</a>
+          <a class="contacts__button button regular-button" href="#">Форма обратной связи</a>
         </div>
       </section>
     </div>
@@ -659,28 +668,28 @@
     </div>
   </footer>
 
-  <div class="modal-container modal-container-close">
-    <div class="modal modal-feedback">
-      <p class="modal-feedback-title">Мы обязательно ответим вам!</p>
-      <form class="modal-form" action="action=https://echo.htmlacademy.ru/" method="post">
-        <p class="field-group">
+  <div class="modal">
+    <div class="modal__container">
+      <p class="modal__feedback-title">Мы обязательно ответим вам!</p>
+      <form class="modal__form" action="action=https://echo.htmlacademy.ru/" method="post">
+        <p class="modal__form-field-group">
           <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
-          <input class="feedback-form-field field" id="feedback-name" name="feedback-name" type="text"
+          <input class="field" id="feedback-name" name="feedback-name" type="text"
             placeholder="Имя и фамилия" required>
         </p>
-        <p class="field-group">
+        <p class="modal__form-field-group">
           <label class="visually-hidden" for="email">Email</label>
-          <input class="feedback-form-field field" type="text" id="email" name="email" placeholder="email@example.com"
+          <input class="field" type="text" id="email" name="email" placeholder="email@example.com"
             required>
         </p>
-        <p class="field-group field-group-message">
+        <p class="modal__form-field-group">
           <label class="visually-hidden" for="messege">Введите сообщение в свободной форме</label>
-          <textarea class="feedback-form-field field feedback-form-field-messege" name="messege" id="messege"
+          <textarea class="modal__form-text-area" name="messege" id="messege"
             placeholder="В свободной форме" required></textarea>
         </p>
-        <button class="button submit-form-button" type="submit">Отправить</button>
+        <button class="modal__form-button button regular-button" type="submit">Отправить</button>
       </form>
-      <button class="close-button" type="button">
+      <button class="close-button button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </div>
@@ -688,19 +697,24 @@
 
 
   <!-- template basket item -->
-  <template id="popover-basket">
+  <template id="basket-item">
     <li class="popover__basket-item">
       <div class="popover__basket-image-wrapper">
         <picture>
           <source>
-          <img>
+          <img class="popover__basket-item-img">
         </picture>
       </div>
       <div class="popover__basket-discription">
-        <h3 class="popover__basket-title"></h3>
+        <h3 class="popover__basket-item-title"></h3>
         <p class="popover__basket-price-per-kg"></p>
       </div>
-      <b class="popover__basket-price"></b>
+      <b class="popover__basket-price">
+        <span class="popover__basket-price-value"></span> ₽
+      </b>
+      <input class="input-ice-cream-flavor" type="hidden" name="ice-cream-flavor" value="">
+      <input class="input-price" type="hidden" name="price" value="">
+      <input class="input-weight" type="hidden" name="weight" value="">
       <button class="popover__basket-button-close" type="button">
         <span class="visually-hidden">Убрать позицию</span>
       </button>
@@ -741,7 +755,39 @@
     </div>
   </template>
 
+  <!-- template product-card -->
+
+  <template id="product-card">
+    <li class="product-card">
+      <a class="product-card__image-link" href="#">
+        <div class="product-card__image-wrapper">
+          <picture>
+            <source media="(min-width:1365px)"
+              srcset="img/content-image/product-card/desktop/raspbery-desktop.webp 1x, img/content-image/product-card/desktop/raspbery-desktop@2x.webp 2x">
+            <img class="product-card__image" src="img/content-image/product-card/desktop/raspbery-desktop.png"
+              srcset="img/content-image/product-card/desktop/raspbery-desktop@2x.png 2x" alt="Малина.">
+          </picture>
+        </div>
+        <h3 class="product-card__title"></h3>
+      </a>
+      <div class="product-card__wrapper">
+        <p class="product-card__discriprion">Сливочное мороженое с малиновым джемом</p>
+        <b class="product-card__price">310 ₽/кг</b>
+        <a href="#" class="button basket-button">
+          <span class="visually-hidden">Купить</span>
+          <svg class="product-card__icon" aria-hidden="true" focusable="false" width="16" height="16"
+            viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/icone/sprite.svg#cart"></use>
+          </svg>
+        </a>
+      </div>
+      <input class="fat" type="hidden" name="fat-percent">
+
+    </li>
+  </template>
+
   <script src="./js/main.js" type="module"></script>
+  <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>

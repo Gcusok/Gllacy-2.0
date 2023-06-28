@@ -24,6 +24,7 @@ const themeBody = [
   }
 ];
 
+
 const imagesArr = [...sliderItems];
 let sliderCount = 0;
 
@@ -47,7 +48,6 @@ const renderSlider = (sliderCount) => {
   circleImage.style.backgroundColor = themeBody[sliderCount].circle;
   chosenItem.appendChild(imagesArr[sliderCount]);
 }
-
 
 const swiperSlide = (operations) => {
   isValidSlide();

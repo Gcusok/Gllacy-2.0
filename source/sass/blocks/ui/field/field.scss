@@ -26,7 +26,7 @@
     outline: transparent;
   }
 
-  &:invalid:hover {
+  &:invalid:focus:hover {
     border-color: $invalid-color;
     box-shadow: 0 0 0 1px $invalid-color;
   }
@@ -36,10 +36,9 @@
     border: 1px solid $gray;
     opacity: 0.6;
   }
-}
 
-.field-group {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+  &:focus:valid {
+    border: 1px solid $valid-color;
+    outline: none;
+  }
 }
