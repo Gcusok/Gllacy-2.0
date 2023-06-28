@@ -36,10 +36,8 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
-
-      - uses: actions/checkout@v3
-
-      - uses: actions/download-artifact@v3
+        uses: actions/checkout@v3
+        uses: actions/download-artifact@v3
 
       - name: Display structure of downloaded files
         run: ls -R
@@ -47,6 +45,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build
+          folder: ./build
           branch: master
           single-commit: true
