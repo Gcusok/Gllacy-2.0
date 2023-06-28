@@ -37,6 +37,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: ./build
+          folder: ../build
           branch: master
           single-commit: true
