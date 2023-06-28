@@ -19,7 +19,10 @@ document.addEventListener('click', (evt) => {
 })
 
 const closePopover = (perentItem, popoverItem, className, evt) => {
-  if(!perentItem.contains(evt.target)) {
+  if(evt.target.classList.contains('popover__basket-button-close')) {
+    return
+  }
+  if(!perentItem.contains(evt.target) ) {
     popoverItem.classList.remove(className);
   }
 }

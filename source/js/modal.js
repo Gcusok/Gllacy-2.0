@@ -8,43 +8,43 @@ const cancel = modal.querySelector('.close-button');
 const modalButton = modal.querySelector('.modal__form-button');
 
 const onCancelClick = () => {
-  closeModal();
+closeModal();
 }
 
 const openModal = () => {
-  modal.classList.add('modal--open');
-  body.classList.add('modal-open');
-  document.addEventListener('keydown', onDocumentKeydown);
-  cancel.addEventListener('click', onCancelClick);
-  modal.addEventListener('click', onModalClick);
+modal.classList.add('modal--open');
+body.classList.add('modal-open');
+document.addEventListener('keydown', onDocumentKeydown);
+cancel.addEventListener('click', onCancelClick);
+modal.addEventListener('click', onModalClick);
 }
 
 const onDocumentKeydown = (evt) => {
-  if(isEscapeKey(evt) && !evt.target.matches('.field') &!evt.target.matches('.modal__form-text-area')) {
-    closeModal();
+if(isEscapeKey(evt) && !evt.target.matches('.field') &!evt.target.matches('.modal__form-text-area')) {
+  closeModal();
   }
 }
 
 const closeModal = () => {
-  modal.classList.remove('modal--open');
-  body.classList.remove('modal-open');
-  document.removeEventListener('keydown', onDocumentKeydown);
-  cancel.removeEventListener('click', onCancelClick);
-  modal.removeEventListener('click', onModalClick);
+modal.classList.remove('modal--open');
+body.classList.remove('modal-open');
+document.removeEventListener('keydown', onDocumentKeydown);
+cancel.removeEventListener('click', onCancelClick);
+modal.removeEventListener('click', onModalClick);
 }
 
 const onModalClick = (evt) => {
-  if(!modalContainer.contains(evt.target)) {
-    closeModal();
-  }
+if(!modalContainer.contains(evt.target)) {
+  closeModal();
+}
 }
 
 contactButton.addEventListener('click', (evt) => {
-  evt.preventDefault();
-  openModal();
+evt.preventDefault();
+openModal();
 })
 
 modalButton.addEventListener('submit', (evt) => {
-  evt.preventDefault();
-  closeModal();
+evt.preventDefault();
+closeModal();
 })

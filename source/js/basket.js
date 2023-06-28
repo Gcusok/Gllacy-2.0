@@ -7,13 +7,46 @@ const basketListItem = basket.querySelector('.popover__basket-list');
 let basketItems = basket.querySelectorAll('.popover__basket-item');
 let total = basket.querySelector('.popover__basket-total-value');
 
+// const listinerBasketData = () => {
+//   if(window.location.toString().indexOf('index.html')>0 === true) {
+//     renderSessionData();
+//   }
+//   let basketArr = [...basketItems];
+
+//   basketArr.forEach((item, index) => {
+//   basketArr[index] = item.innerHTML;
+//   });
+
+//   sessionStorage.basketData = JSON.stringify(basketArr);
+//   basketListItem.innerHTML ='';
+//   const renderSessionData = () => {
+//     let jSon = JSON.parse(sessionStorage.basketData);
+//     jSon.forEach(item => {
+//       let element = document.createElement('li')
+//       element.classList.add('popover__basket-item');
+//       element.innerHTML = item;
+//       basketListItem.append(element)
+//     })
+//   }
+
+//   if(sessionStorage.basketData.length > 0) {
+//     renderSessionData();
+//     console.log(sessionStorage.basketData.length)
+//   }
+
+
+//   // console.log(JSON.parse(sessionStorage.basketData))
+// }
+
+
 const basketChekout = () => {
-  basketItems.forEach((item) => {
+  basketItems.forEach(item => {
     let removeButtont = item.querySelector('.popover__basket-button-close');
     removeButtont.classList.add('button');
     removeButtont.addEventListener('click', () => {
       item.remove();
       updateBasketData();
+      listinerBasketData();
     })
   })
 }
