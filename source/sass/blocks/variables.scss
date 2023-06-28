@@ -90,3 +90,9 @@ $desktop-width: 1365px;
 $tablet-width: 768px;
 
 $mobile-width-only: 320px;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
