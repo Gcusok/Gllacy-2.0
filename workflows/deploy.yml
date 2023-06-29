@@ -39,10 +39,3 @@ jobs:
         with:
           name: build
           path: path/to/artifact/
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: build
-          branch: master
-          single-commit: true
